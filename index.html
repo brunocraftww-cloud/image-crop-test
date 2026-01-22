@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Visualizador de Imagens</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <img src="imgs/mccann_logo.png" alt="Logo" class="logo">
+</header>
+
+<div class="container">
+  <div class="sidebar">
+    <div id="thumbList"></div>
+  </div>
+
+  <div class="main">
+    <div class="upload">
+      <input type="file" id="uploadInput" accept="image/*">
+    </div>
+
+    <div class="buttons">
+      <button data-mode="full" class="active">Full Image</button>
+      <button data-mode="mobile">Mobile</button>
+      <button data-mode="desktop">Desktop</button>
+    </div>
+
+    <div class="preview-wrapper">
+      <div class="preview" id="preview"></div>
+      <div class="label" id="label"></div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
